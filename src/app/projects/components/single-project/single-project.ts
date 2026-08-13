@@ -1,9 +1,10 @@
 import { Component, input } from '@angular/core';
 import { Project } from '../../interfaces/project-interface';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-single-project',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './single-project.html',
   styleUrl: './single-project.css',
 })

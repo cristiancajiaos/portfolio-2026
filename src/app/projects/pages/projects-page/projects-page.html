@@ -7,16 +7,7 @@
   @if (projectResource.hasValue()) {
     <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-3 mt-2">
       @for (project of projectResource.value(); track project.id) {
-        <a [routerLink]="['/projects', project.id]">
-          <div class="card p-2 bg-base-100 w-full shadow-sm hover:shadow-gray-600">
-            <figure>
-              <img [src]="project.imgUrl" alt="Shoes" class="max-h-70 rounded" />
-            </figure>
-            <div class="card-body">
-              <h2 class="text-2xl card-title font-oswald">{{ project.title }} ({{ project.year }})</h2>
-            </div>
-          </div>
-        </a>
+        <app-single-project [project]="project"/>
       }
     </div>
   }

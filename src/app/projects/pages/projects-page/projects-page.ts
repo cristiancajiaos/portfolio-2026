@@ -1,12 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { ProjectService } from '../../services/project-service';
 import { rxResource } from '@angular/core/rxjs-interop';
-import { RouterLink } from '@angular/router';
 import { SingleProject } from '../../components/single-project/single-project';
 
 @Component({
   selector: 'app-projects-page',
-  imports: [RouterLink, SingleProject],
+  imports: [SingleProject],
   templateUrl: './projects-page.html',
   styleUrl: './projects-page.css',
 })
