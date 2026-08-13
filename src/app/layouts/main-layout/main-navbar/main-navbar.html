@@ -1,19 +1,33 @@
-<div class="navbar bg-base-100 shadow-sm">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path
-            fill="currentColor"
-            d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"
-          />
-        </svg>
+<header>
+  <div class="navbar bg-base-100 shadow-sm">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              fill="currentColor"
+              d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"
+            />
+          </svg>
+        </div>
+        <ul
+          tabindex="-1"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+        >
+          @for (link of links(); track link.title) {
+            <li>
+              <a [routerLink]="link.route">
+                {{ link.title }}
+              </a>
+            </li>
+          }
+        </ul>
       </div>
-      <ul
-        tabindex="-1"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-      >
+      <a class="btn btn-ghost text-xl">Cristian Cajiao Skarnic | Portfolio</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
         @for (link of links(); track link.title) {
           <li>
             <a [routerLink]="link.route">
@@ -23,18 +37,6 @@
         }
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl">Cristian Cajiao Skarnic | Portfolio</a>
+    <div class="navbar-end"></div>
   </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      @for (link of links(); track link.title) {
-        <li>
-          <a [routerLink]="link.route">
-            {{ link.title }}
-          </a>
-        </li>
-      }
-    </ul>
-  </div>
-  <div class="navbar-end"></div>
-</div>
+</header>
