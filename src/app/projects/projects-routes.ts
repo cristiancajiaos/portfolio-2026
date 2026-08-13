@@ -8,11 +8,15 @@ export const projectRoutes: Routes = [
     children: [
       {
         path: '',
+        title: 'Proyectos',
         component: ProjectsPage,
+        pathMatch: 'full'
       },
       {
         path: ':id',
+        title: 'Proyecto',
         component: ProjectPage,
+        pathMatch: 'full'
       },
     ],
   },

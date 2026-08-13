@@ -7,6 +7,7 @@ export const certificatesRoutes: Routes = [
     children: [
       {
         path: '',
+        title: 'Certificados',
         component: CertificatesPage,
         pathMatch: 'full'
       },

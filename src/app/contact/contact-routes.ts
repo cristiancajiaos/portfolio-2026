@@ -4,7 +4,14 @@ import { ContactPage } from './pages/contact-page/contact-page';
 export const contactRoutes: Routes = [
   {
     path: '',
-    children: [{ path: '', component: ContactPage }],
+    children: [
+      {
+        path: '',
+        title: 'Contacto',
+        component: ContactPage,
+        pathMatch: 'full',
+      },
+    ],
   },
 ];
 
