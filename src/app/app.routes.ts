@@ -6,6 +6,10 @@ export const routes: Routes = [
     loadChildren: () => import('./projects/projects-routes')
   },
   {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact-routes')
+  },
+  {
     path: '',
     redirectTo: '/projects',
     pathMatch: 'full'
