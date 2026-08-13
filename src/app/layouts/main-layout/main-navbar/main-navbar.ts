@@ -14,7 +14,7 @@ interface Link {
 export class MainNavbar {
 
   links = signal<Link[]>([{
-    title: 'Projectos',
+    title: 'Proyectos',
     route: 'projects'
   }, {
     title: 'Certificados',
