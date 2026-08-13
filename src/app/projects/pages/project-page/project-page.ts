@@ -4,10 +4,11 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { switchMap, tap } from 'rxjs';
 import { ProjectService } from '../../services/project-service';
 import { Title } from '@angular/platform-browser';
+import { Loading } from '../../../shared/components/loading/loading';
 
 @Component({
   selector: 'app-project-page',
-  imports: [RouterLink],
+  imports: [RouterLink, Loading],
   templateUrl: './project-page.html',
   styleUrl: './project-page.css',
 })

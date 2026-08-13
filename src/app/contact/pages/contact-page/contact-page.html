@@ -1,8 +1,6 @@
 <section class="contact-page">
   @if (contactResource.isLoading()) {
-    <div class="w-full h-500">
-      <span class="loading loading-spinner loading-xs"></span>
-    </div>
+    <app-loading/>
   }
   @if (contactResource.hasValue()) {
     <ul class="list bg-base-100 rounded-box shadow-md mt-4">

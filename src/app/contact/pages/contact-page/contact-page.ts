@@ -2,10 +2,11 @@ import { Component, inject } from '@angular/core';
 import { ContactService } from '../../services/contact-service';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { SingleContact } from '../../components/single-contact/single-contact';
+import { Loading } from '../../../shared/components/loading/loading';
 
 @Component({
   selector: 'app-contact-page',
-  imports: [SingleContact],
+  imports: [SingleContact, Loading],
   templateUrl: './contact-page.html',
   styleUrl: './contact-page.css',
 })

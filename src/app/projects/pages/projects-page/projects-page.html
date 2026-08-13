@@ -1,8 +1,6 @@
 <section class="projects-page">
   @if (projectResource.isLoading()) {
-    <div class="w-full h-500">
-      <span class="loading loading-spinner loading-xs"></span>
-    </div>
+    <app-loading/>
   }
   @if (projectResource.hasValue()) {
     <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-3 mt-2">
