@@ -1,1 +1,16 @@
-<p>certificates-page works!</p>,
+<section class="certificates-page">
+  @if (certificateResource.isLoading()) {
+    <div class="w-full h-500">
+      <span class="loading loading-spinner loading-xs"></span>
+    </div>
+  }
+  @if (certificateResource.hasValue()) {
+    <ul class="list bg-base-100 rounded-box shadow-md mt-4">
+      @for (certificate of certificateResource.value(); track certificate.id) {
+      <app-single-certificate [certificate]="certificate"/>
+    }
+    </ul>
+
+  }
+</section>
+

@@ -1,0 +1,37 @@
+<li class="list-row">
+  <div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="mt-2"
+      width="1.5em"
+      height="1.5em"
+      viewBox="0 0 24 24"
+    >
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        fill="currentColor"
+        d="M12 14.94a6.44 6.44 0 1 0 0-12.88a6.44 6.44 0 0 0 0 12.88m.055 1.475A7.87 7.87 0 0 1 7.56 15.01v5.805c0 .44.24.84.63 1.05s.855.185 1.22-.06L12 20.08l2.59 1.725c.2.135.43.2.66.2a1.19 1.19 0 0 0 1.19-1.19v-5.73a7.9 7.9 0 0 1-4.385 1.325z"
+      />
+    </svg>
+  </div>
+  <div>
+    <div class="font-lato">
+      {{ certificate().title }}
+    </div>
+    <div class="text-xs uppercase font-semibold font-oswald opacity-60">
+      {{ certificate().place }}
+    </div>
+  </div>
+  <a class="btn btn-square btn-ghost"
+     [href]="certificate().certificateUrl"
+     target="_blank"
+     class="tooltip" data-tip="Se abrirá el link en una pestaña nueva">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path
+        fill="currentColor"
+        d="M11 17H7q-2.075 0-3.537-1.463T2 12t1.463-3.537T7 7h4v2H7q-1.25 0-2.125.875T4 12t.875 2.125T7 15h4zm-3-4v-2h8v2zm5 4v-2h4q1.25 0 2.125-.875T20 12t-.875-2.125T17 9h-4V7h4q2.075 0 3.538 1.463T22 12t-1.463 3.538T17 17z"
+      />
+    </svg>
+  </a>
+</li>
