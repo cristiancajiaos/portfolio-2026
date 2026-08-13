@@ -1,0 +1,20 @@
+[
+  {
+    "id":1,
+    "medium":"Correo",
+    "description":"cristiancajiaos@outlook.com",
+    "link":"mailto:cristiancajiaos@outlook.com"
+  },
+  {
+    "id":2,
+    "medium":"LinkedIn",
+    "description":"Cristian Cajiao Skarnic",
+    "link":"https://www.linkedin.com/in/cristiancajiaos/"
+  },
+  {
+    "id":3,
+    "medium":"GitHub",
+    "description":"cristiancajiaos",
+    "link":"https://github.com/cristiancajiaos"
+  }
+]

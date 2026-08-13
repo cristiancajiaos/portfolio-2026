@@ -1,1 +1,14 @@
-<p>contact-page works!</p>,
+<section class="contact-page">
+  @if (contactResource.isLoading()) {
+    <div class="w-full h-500">
+      <span class="loading loading-spinner loading-xs"></span>
+    </div>
+  }
+  @if (contactResource.hasValue()) {
+    <ul class="list bg-base-100 rounded-box shadow-md mt-4">
+      @for (contact of contactResource.value(); track contact.id) {
+        <app-single-contact [contact]="contact" />
+      }
+    </ul>
+  }
+</section>

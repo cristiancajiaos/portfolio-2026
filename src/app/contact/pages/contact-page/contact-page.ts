@@ -1,9 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ContactService } from '../../services/contact-service';
+import { rxResource } from '@angular/core/rxjs-interop';
+import { SingleContact } from '../../components/single-contact/single-contact';
 
 @Component({
   selector: 'app-contact-page',
-  imports: [],
+  imports: [SingleContact],
   templateUrl: './contact-page.html',
   styleUrl: './contact-page.css',
 })
-export class ContactPage {}
+export class ContactPage {
+
+  private contactService = inject(ContactService);
+
+  contactResource = rxResource({
+    params: () => {
+      return {foo: 'foo'}
+    },
+    stream: () => {
+      return this.contactService.getContacts();
+    }
+  });
+}
