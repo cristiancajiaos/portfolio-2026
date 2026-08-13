@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Service } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { map, Observable, tap } from 'rxjs';
 import { Project } from '../interfaces/project-interface';
 
 @Service()
@@ -14,7 +14,7 @@ export class ProjectService {
 
   getProjectById(id: number): Observable<Project | undefined> {
     return this.http.get<Project[]>(`assets/json/projects.json`).pipe(
-      map((projects) => projects.find(project => project.id == id))
+      map((projects) => projects.find(project => project.id == id)),
     );
   }
 }

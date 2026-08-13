@@ -5,8 +5,8 @@
     "year":2025,
     "imgUrl":"assets/images/projects/findamovie.png",
     "sampleUrl":"https://cristiancajiaos.github.io/find-a-movie/",
-    "description":"<p>Esta aplicación, construida con Angular 20 y actualizada a Angular 22, es un buscador de películas, y de personas que trabajan en la industria cinematográfica. Ten a mano la información básica de cada película antes de que la veas.</p><p>Características de la aplicación:</p><ul><li>Dos buscadores, uno de películas y otro de personas</li><li>Cada película cuenta con su información básica, reparto, equipo técnico destacado, y equipo técnico completo</li><li>Para cada persona se puede consultar su información básica, su filmografía como actor, o su filmografía como miembro del equipo técnico</li><li>Se puede ordenar y filtrar la filmografía de cada persona como actor y como miembro del equipo técnico según diversos criterios</li></ul><p>Usa la API de The Movie Database (TMDB). Solo en inglés.</p>",
-    "tools":["Angular 20-22", "TypeScript", "RxJS", "HTML5", "CSS3", "SASS/SCSS", "Bootstrap 5", "NG-Bootstrap", "NG-Select", "Font Awesome 7", "API de The Movie Database (TMDB)"],
+    "description":"<p>Esta aplicación es un buscador de películas, y de personas que trabajan en la industria cinematográfica. Ten a mano la información básica de cada película antes de que la veas.</p><p>Esta aplicación se compone de dos buscadores, uno para películas y otro para personas.</p><p>Al consultar una película se puede ver su información básica, su reparto, equipo técnico, y películas relacionadas.</p><p>Al consultar una persona se puede ver su filmografía como actor, y su filmografía como parte del equipo técnico, y se puede filtrar cualquiera de las dos filmografías según distintos criterios.</p><p>Usa la API de TheMovieDB. Solo en inglés.</p>",
+    "tools":["Angular 22", "TypeScript", "RxJS", "HTML5", "CSS3", "SASS/SCSS", "Bootstrap 5", "NG-Bootstrap", "NG-Select", "Font Awesome 7", "API de The Movie Database (TMDB)"],
     "otherDetails": "<p>Ninguno</p>"
   },
   {
