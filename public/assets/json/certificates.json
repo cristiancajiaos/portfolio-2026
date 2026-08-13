@@ -1,0 +1,37 @@
+[
+  {
+    "id":1,
+    "title":"EF SET Certificate - C1 Advanced English Level in reading and listening",
+    "place": "EF",
+    "date":"septiembre 2025",
+    "certificateUrl":"https://cert.efset.org/en/nwJpA8"
+  },
+  {
+    "id":2,
+    "title":"Angular: De cero a experto",
+    "place": "Udemy",
+    "date":"agosto 2026",
+    "certificateUrl":"https://www.udemy.com/certificate/UC-3b6d2750-5194-471e-8ad4-af1d0eafce36"
+  },
+  {
+    "id":3,
+    "title":"Curso de Java desde cero a experto",
+    "place": "Edutin Academy",
+    "date":"agosto 2025",
+    "certificateUrl":"https://app.edutin.com/verify/14875540"
+  },
+  {
+    "id":4,
+    "title":"Legacy JavaScript Algorithms and Data Structures V7",
+    "place": "FreeCodeCamp",
+    "date":"julio 2018",
+    "certificateUrl":"https://www.freecodecamp.org/certification/cristiancajiaos/javascript-algorithms-and-data-structures"
+  },
+  {
+    "id":5,
+    "title":"Legacy Responsive Web Design V8",
+    "place": "FreeCodeCamp",
+    "date":"junio 2018",
+    "certificateUrl":"https://www.freecodecamp.org/certification/cristiancajiaos/responsive-web-design"
+  }
+]

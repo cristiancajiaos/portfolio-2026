@@ -1,0 +1,42 @@
+[
+  {
+    "id":1,
+    "title":"Find a Movie",
+    "year":2025,
+    "imgUrl":"img/projects/findamovie.png",
+    "sampleUrl":"https://cristiancajiaos.github.io/find-a-movie/",
+    "description":"<p>Esta aplicación, construida con Angular 20 y actualizada a Angular 22, es un buscador de películas, y de personas que trabajan en la industria cinematográfica. Ten a mano la información básica de cada película antes de que la veas.</p><p>Características de la aplicación:</p><ul><li>Dos buscadores, uno de películas y otro de personas</li><li>Cada película cuenta con su información básica, reparto, equipo técnico destacado, y equipo técnico completo</li><li>Para cada persona se puede consultar su información básica, su filmografía como actor, o su filmografía como miembro del equipo técnico</li><li>Se puede ordenar y filtrar la filmografía de cada persona como actor y como miembro del equipo técnico según diversos criterios</li></ul><p>Usa la API de The Movie Database (TMDB). Solo en inglés.</p>",
+    "tools":["Angular 20-22", "TypeScript", "RxJS", "HTML5", "CSS3", "SASS/SCSS", "Bootstrap 5", "NG-Bootstrap", "NG-Select", "Font Awesome 7", "API de The Movie Database (TMDB)"],
+    "otherDetails": "<p>Ninguno</p>"
+  },
+  {
+    "id":2,
+    "title":"Handbrake Bitrate Calculator",
+    "year":2021,
+    "imgUrl":"img/projects/handbrakecalculator.png",
+    "sampleUrl":"https://cristiancajiaos.github.io/handbreak-calculator-bs/",
+    "description":"<p>Aplicación desarrollada en Angular 12, para uso personal.</p><p>Esta aplicación es además un remake de una aplicación creada anteriormente con Angular 8 y Angular Material, que cumple exactamente el mismo propósito.</p><p>El propósito de esta aplicación es obtener el bitrate en kbps a especificar para crear un video con el programa Handbrake, basado en peso del archivo deseado en MB, duración del video en segundos, y bitrate de calidad del audio en kilobytes por segundo.</p><p>La aplicación actual está mejorada de la aplicación original, ya que incluye validación efectiva del formulario, y un menú de ayuda que explica como se hace el cálculo del bitrate.</p>",
+    "tools":["Angular 12-13", "TypeScript", "HTML5", "CSS3", "SASS/SCSS", "Bootstrap 5", "NG-Bootstrap"],
+    "otherDetails": "<p>Ninguno</p>"
+  },
+  {
+    "id":3,
+    "title":"En esto estuve",
+    "year":2020,
+    "imgUrl":"img/projects/enestoestuve.png",
+    "sampleUrl":"https://cristiancajiaos.github.io/enestoestuveapp/",
+    "description":"<p>Aplicación creada como diseño ideal del blog personal \"En esto estuve\".</p><p>La aplicación sirvió como un diseño para crear una plantilla para Tumblr, que es la plataforma en que estuvo hosteado el blog, pero con algunas modificaciones particulares para que funcionara en esa plataforma.</p>",
+    "tools":["Angular 10", "TypeScript", "HTML5", "CSS3", "SASS/SCSS", "Bootstrap 4", "NG-Bootstrap"],
+    "otherDetails": "<p>Ninguno</p>"
+  },
+  {
+    "id":4,
+    "title":"Entrekids",
+    "year":2018,
+    "imgUrl":"img/projects/entrekids.png",
+    "sampleUrl":"https://cristiancajiaos.github.io/ekids/",
+    "description":"<p>Prototipo de aplicación, diseñado para la postulación de trabajo al proyecto Entrekids.</p>",
+    "tools":["JavaScript", "HTML5", "CSS3", "Bootstrap 4"],
+    "otherDetails": "<p>Ninguno</p>"
+  }
+]
