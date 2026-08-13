@@ -3,11 +3,10 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { switchMap } from 'rxjs';
 import { ProjectService } from '../../services/project-service';
-import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-project-page',
-  imports: [JsonPipe, RouterLink],
+  imports: [RouterLink],
   templateUrl: './project-page.html',
   styleUrl: './project-page.css',
 })

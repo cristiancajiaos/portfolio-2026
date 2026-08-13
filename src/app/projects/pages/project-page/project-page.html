@@ -14,7 +14,9 @@
     @if (project()?.sampleUrl) {
       <section class="project-sampleurl mb-2">
         <h2 class="text-2xl font-bold font-oswald mb-2">Muestra para probar el proyecto</h2>
-        <a class="btn btn-primary w-100 font-oswald" [href]="project()?.sampleUrl">
+        <a class="btn btn-primary w-100 font-oswald"
+           [href]="project()?.sampleUrl"
+           target="_blank">
           Demo del proyecto
         </a>
       </section>
