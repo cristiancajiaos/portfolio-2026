@@ -2,3 +2,8 @@
 
 @import 'tailwindcss';
 @plugin 'daisyui';
+
+@theme {
+  --font-lato: "Lato", "sans-serif";
+  --font-oswald: "Oswald", "sans-serif";
+}

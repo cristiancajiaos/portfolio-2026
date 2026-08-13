@@ -1,8 +1,8 @@
 <header>
-  <div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar bg-gray-500 shadow-sm font-oswald">
     <div class="navbar-start">
       <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <div tabindex="0" role="button" class="btn btn-neutral lg:hidden mr-2 text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
             <path d="M0 0h24v24H0z" fill="none" />
             <path
@@ -17,20 +17,23 @@
         >
           @for (link of links(); track link.title) {
             <li>
-              <a [routerLink]="link.route">
+              <a [routerLink]="link.route" routerLinkActive="font-bold">
                 {{ link.title }}
               </a>
             </li>
           }
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl">Cristian Cajiao Skarnic | Portfolio</a>
+      <a class="btn btn-neutral text-xl font-oswald text-white">
+        <img src="assets/images/profile/profile.jpg" class="w-7 rounded"/>
+        Cristian Cajiao Skarnic | Portafolio
+      </a>
     </div>
     <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
+      <ul class="menu menu-horizontal px-1 text-white">
         @for (link of links(); track link.title) {
           <li>
-            <a [routerLink]="link.route">
+            <a [routerLink]="link.route" routerLinkActive="text-black font-bold">
               {{ link.title }}
             </a>
           </li>

@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 interface Link {
   title: string;
@@ -7,7 +7,7 @@ interface Link {
 }
 @Component({
   selector: 'app-main-navbar',
-  imports: [RouterLink],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './main-navbar.html',
   styleUrl: './main-navbar.css',
 })
