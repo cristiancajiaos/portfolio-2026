@@ -6,6 +6,10 @@ export const routes: Routes = [
     loadChildren: () => import('./projects/projects-routes')
   },
   {
+    path: 'certificates',
+    loadChildren: () => import('./certificates/certificates-routes')
+  },
+  {
     path: 'contact',
     loadChildren: () => import('./contact/contact-routes')
   },

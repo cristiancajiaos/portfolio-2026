@@ -17,6 +17,9 @@ export class MainNavbar {
     title: 'Projectos',
     route: 'projects'
   }, {
+    title: 'Certificados',
+    route: 'certificates'
+  }, {
     title: 'Contacto',
     route: 'contact'
   }])
